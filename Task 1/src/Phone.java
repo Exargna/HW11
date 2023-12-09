@@ -4,7 +4,6 @@ public class Phone {
     String number;
     String model;
     int weight;
-    String nameCaller;
     static String country;
 
     public static void receiveCall(String nameCaller) {
@@ -17,10 +16,13 @@ public class Phone {
 
     public Phone() {
     }
-
     public Phone(String number, String model, int weight) {
         this.number = number;
         this.model = model;
         this.weight = weight;
+    }
+    public void print() {
+        System.out.println("\nНомер: " + number + "\nМодель: " +
+                model + "\nВес: " + weight + " грамм" + "\nСтрана Изготовитель: " + Phone.country);
     }
 }
